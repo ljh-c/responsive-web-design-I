@@ -32,7 +32,6 @@ header {
 	align-items: center;
 	width: 61.5%;
 	padding: 1.5% 0;
-	background: aqua;
 }
 
 header nav {
@@ -59,7 +58,6 @@ nav a {
 .title {
 	text-align: center;
 	width: 100%;
-	/* background: cadetblue; */
 }
 
 h1 {
@@ -191,7 +189,7 @@ li {
 		margin: 3.25% 0;
 	}
 	.main {
-		width: 96%;
+		width: 92%;
 	}
 	.twin {
 		margin: 2.5% 1%;
@@ -205,5 +203,49 @@ li {
 	}
 	footer {
 		padding: 2% 0;
+	}
+}
+
+/* mobile styles */
+
+@media (max-width: 500px) {
+	header {
+		width: 100%;
+	}
+	header nav {
+		flex-direction: column;
+	}
+	nav a {
+		font-size: 20px;
+		width: 100%;
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 3% 0;
+	}
+	nav a:last-child {
+		border-bottom: 1px solid black;
+	}
+	.logo {
+		margin: 5% 0;
+	}
+	.splash {
+		width: 100%;
+	}
+	.title {
+		margin-bottom: 12%;
+	}
+	.content {
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 3.25% 0;
+	}
+	.twin {
+		margin: 5% 1%;
+	}
+	.triplet {
+		margin: 6% 2.25%;
+	}
+	.bottom {
+		margin: 3% 0;
 	}
 }
