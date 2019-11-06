@@ -1,3 +1,251 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* GENERAL STYLES */
 
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+}
+
+/* header styles */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 61.5%;
+	padding: 1.5% 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+}
+
+nav a {
+	color: gray;
+	text-decoration: none;
+	font-size: 13.5px;
+}
+
+.splash {
+	padding-top: 3.3%;
+	padding-bottom: 5.5%;
+	display: flex;
+	justify-content: space-between;
+	width: 61.5%;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.button {
+    border: 1px solid black;
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 5px 45px;
+}
+
+.learnButton {
+	border: 1px solid black;
+    background: white;
+    color: black;
+    text-decoration: none;
+	padding: 5px 40px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+/* MAIN SECTION STYLES */
+
+.main {
+    border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 61.5%;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.twin {
+	margin: 2.5% 0.25%;
+}
+
+.triplet {
+    margin: 2.5% 0.25%;
+}
+
+/* BOTTOM SECTION STYLES */
+
+.bottom {
+	width: 61.5%;
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	padding: 1% 0;
+}
+
+.subtitle {
+	text-align: left;
+	width: 61.5%;
+	padding: 0.25% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.services {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-evenly;
+}
+
+.box {
+	width: 48%;
+	background-color: lightgray;
+	border: 1px solid black;
+	margin: 2.5% 0;
+	padding: 2.5%;
+}
+
+.facts {
+	padding-top: 3%;
+	padding-bottom: 5.5%;
+	display: flex;
+	width: 61.5%;
+}
+
+.factsBox {
+	padding-right: 2.5%;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* tablet styles */
+
+@media (max-width: 800px) {
+	header {
+		flex-flow: column-reverse;
+		width: 96%;
+	}
+	header nav {
+		width: 100%;
+		padding: 2% 0;
+	}
+	nav a {
+		font-size: 14px;
+	}
+	.logo {
+		margin: 10% 0;
+		margin-left: 0%;
+	}
+	.splash {
+		width: 96%;
+	}
+	.splash img {
+		display: none;
+	}
+	.title {
+		margin: 3.25% 0;
+	}
+	.main {
+		width: 92%;
+	}
+	.twin {
+		margin: 2.5% 1%;
+	}
+	.triplet {
+		margin: 2.5% 2.25%;
+	}
+	.bottom {
+		width: 96%;
+		padding: 4% 2%;
+	}
+	footer {
+		padding: 2% 0;
+	}
+}
+
+/* mobile styles */
+
+@media (max-width: 500px) {
+	header {
+		width: 100%;
+	}
+	header nav {
+		flex-direction: column;
+	}
+	nav a {
+		font-size: 20px;
+		width: 100%;
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 3% 0;
+	}
+	nav a:last-child {
+		border-bottom: 1px solid black;
+	}
+	.logo {
+		margin: 5% 0;
+	}
+	.splash {
+		width: 100%;
+	}
+	.title {
+		margin-bottom: 12%;
+	}
+	.content {
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 3.25% 0;
+	}
+	.twin {
+		margin: 5% 1%;
+	}
+	.triplet {
+		margin: 6% 2.25%;
+	}
+	.bottom {
+		margin: 3% 0;
+	}
+}
